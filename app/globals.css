@@ -7,7 +7,7 @@
   h2,
   h3,
   h4 {
-    @apply font-bold;
+    @apply font-bold  text-purple-900;
   }
 
   h1 {
@@ -25,14 +25,25 @@
   p {
     @apply text-sm text-default-text;
   }
+  form {
+    @apply rounded-xl p-4;
+  }
+  label {
+    @apply mt-4;
+  }
+  input,
+  select,
+  textarea {
+    @apply m-1 rounded p-1 border-2 border-nav bg-card;
+  }
 }
 @layer components {
   .btn {
-    @apply hover: no-underline bg-purple-accent hover: bg-purple-accent-hover
+    @apply no-underline bg-purple-800
     tracking-wider w-full text-center text-nav font-bold cursor-pointer uppercase 
-    py-2 px-4 rounded-md transition-colors block;
+    py-2 px-4 rounded-md transition-colors block hover:bg-purple-700;
   }
   .icon {
-    @apply text-purple-800 text-2xl;
+    @apply text-purple-900 text-2xl;
   }
 }
